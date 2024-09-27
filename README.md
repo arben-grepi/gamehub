@@ -22,7 +22,8 @@ GameHub is a React application that utilizes the RAWG API, the largest video gam
 
 ## Installation
 
-To set up the GameHub application on your local machine, follow these steps:
+To set up and run the GameHub application, make sure your terminal supports Git and Node.js. 
+Set up the GameHub application on your local machine with following steps.
 
 1. **Clone the Repository**:
 
