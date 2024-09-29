@@ -34,5 +34,4 @@ Set up the GameHub application on your local machine with following steps.
    npm run dev
       ```
 
-testing testing 
 
