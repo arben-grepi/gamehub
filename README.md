@@ -1,50 +1,37 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GameHub
 
-Currently, two official plugins are available:
+GameHub is a React application that utilizes the RAWG API, the largest video game database and game discovery service. The project has been deployed using Vercel, and you can find it at [https://gamehub-beige-six.vercel.app/](https://gamehub-beige-six.vercel.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Utilizes the RAWG API for game data.
+- Search for games using various criteria.
+- View detailed information about each game.
+- Responsive design for a seamless user experience.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A build tool that provides a fast development experience.
+- **Chakra UI**: A component library that helps you build accessible React applications.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Framer Motion**: For animations and transitions.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To set up and run the GameHub application, make sure your terminal supports Git and Node.js. 
+Set up the GameHub application on your local machine with following steps.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/arben-grepi/gamehub.git
+   cd gamehub
+   npm install
+   npm run dev
+      ```
+
+
